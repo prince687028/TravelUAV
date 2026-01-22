@@ -8,7 +8,7 @@ deepspeed \
     --master_port 29101 \
     $model_dir/llamavid/train/train_uav/train_uav_notice.py \
     --data_path $root_dir/data/uav_dataset/trainset.json \
-    --dataset_path /mnt/data6/airdrone/dataset/replay_data_log0.1_image0.5/\
+    --dataset_path /path/to/dataset/\
     --output_dir $model_dir/work_dirs/llama-vid-7b-pretrain-224-uav-full-data-lora32 \
     --deepspeed $model_dir/scripts/zero2.json \
     --model_name_or_path $model_dir/model_zoo/vicuna-7b-v1.5/ \
